@@ -205,6 +205,7 @@ function Home() {
         p='16px'
         borderRadius='30px'
         position='relative'
+        boxShadow='0px 20px 30px -3px #000000cc'
       >
         <Box
         position='absolute'
