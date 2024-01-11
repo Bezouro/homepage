@@ -53,7 +53,7 @@ const language = {
     }
   },
   "personalProjects": {
-    "tab": "Personal Projects",
+    "tab": "My Projects",
     "Bezouro": {
       "description": "A simple and beautiful website to showcase my resume."
     },
@@ -68,21 +68,21 @@ const language = {
     }
   },
   "aboutMe": {
-    "tab": "About Me",
+    "tab": "About",
     "Bruno Bezouro": {
       "title": "My name is Bruno Bezouro",
       "description": "I'm a Software Engineer, currently working at JN Moura, and I'm a Computer Engineering student at Descomplica."
     },
     "Computer Engineering": {
-      "title": "I study Computer Engineering at Descomplica.",
-      "description": "I have solid knowledge in programming, and I'm always improving my skills."
+      "title": "A knowledge buff",
+      "description": "I'm studying computer engineering at descomplica, I have solid knowledge in programming, and I'm always improving my skills."
     },
     "Technology Enthusiast": {
-      "title": "I'm passionate about technology.",
+      "title": "I'm passionate about technology",
       "description": "I'm passionate about technology, and I'm always learning new things."
     },
     "DIY Enthusiast": {
-      "title": "I'm a DIY enthusiast.",
+      "title": "I'm a DIY enthusiast",
       "description": "I have a lot of projects that I've made by myself, like my house automation system, some 3D printed things, and several software projects."
     }
   }

@@ -197,9 +197,9 @@ function Home() {
   return (
     <Center w='100vw' h='100vh'>
       <Box
-        mt='64px'
-        w='600px'
-        h='700px'
+        mt={document.body.clientWidth > 600 ? '64px' : '196px'}
+        w={document.body.clientWidth > 600 ? '600px' : '100vw'}
+        h={document.body.clientWidth > 600 ? '700px' : '90vh'}
         bg='#000000cc'
         backdropFilter='blur(10px)'
         p='16px'

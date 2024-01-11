@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
 import {DevSupport} from "@react-buddy/ide-toolbox";
-import {ComponentPreviews} from "./dev";
+import {ComponentPreviews, useInitial} from "./dev";
 import {ChakraProvider, ToastProviderProps} from '@chakra-ui/react';
 import {RouterProvider} from "react-router-dom";
 import { ApolloProvider } from '@apollo/client';
@@ -22,7 +22,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <ApolloProvider client={client}>
       <ChakraProvider toastOptions={toastOptions}>
-        <DevSupport ComponentPreviews={ComponentPreviews}>
+        <DevSupport ComponentPreviews={ComponentPreviews} useInitialHook={useInitial} >
           <RouterProvider router={routes} />
         </DevSupport>
       </ChakraProvider>

@@ -68,14 +68,14 @@ const language = {
     }
   },
   "aboutMe": {
-    "tab": "Sobre Mim",
+    "tab": "Sobre",
     "Bruno Bezouro": {
       "title": "Meu nome é Bruno Bezouro",
       "description": "Sou um Engenheiro de Software, atualmente trabalhando na JN Moura, e sou estudante de Engenharia da Computação na Descomplica."
     },
     "Computer Engineering": {
-      "title": "Eu estudo Engenharia da Computação na Descomplica",
-      "description": "Possuo conhecimento sólido em programação e estou sempre aprimorando minhas habilidades."
+      "title": "Um aficionado por conhecimento",
+      "description": "Estou estudando engenharia da computação na descomplica, Possuo conhecimento sólido em programação e estou sempre aprimorando minhas habilidades."
     },
     "Technology Enthusiast": {
       "title": "Sou apaixonado por tecnologia",
