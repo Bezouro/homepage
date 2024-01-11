@@ -209,10 +209,11 @@ function Home() {
   //command to seg git repo: git remote set-url origin
 
   return (
-    <Center w='100vw' h='100vh'>
+    <Flex w='100vw' h='100vh' flexDir='column' justifyContent='center'>
       <Box
-        mt={document.body.clientWidth > 600 ? '64px' : '196px'}
-        w={document.body.clientWidth > 600 ? '600px' : '100vw'}
+        mt={document.body.clientWidth > 600 ? '64px' : '128px'}
+        m={document.body.clientWidth > 600 ? '0 auto' : '128px auto 4px auto'}
+        w={document.body.clientWidth > 600 ? '600px' : '95vw'}
         h={document.body.clientWidth > 600 ? '700px' : '90vh'}
         bg='#000000cc'
         backdropFilter='blur(10px)'
@@ -267,7 +268,7 @@ function Home() {
 
           <Box w='100%'>
             <Tabs variant='soft-rounded' colorScheme='blue'>
-              <TabList>
+              <TabList overflow='auto'>
                 <Tab _selected={tabSelectedStyle} color='#01f1fe' mr='8px' _focus={{outline: 0}}>{lang.aboutMe.tab}</Tab>
                 <Tab _selected={tabSelectedStyle} color='#01f1fe' mr='8px' _focus={{outline: 0}}>{lang.experience.tab}</Tab>
                 <Tab _selected={tabSelectedStyle} color='#01f1fe' mr='8px' _focus={{outline: 0}}>{lang.skills.tab}</Tab>
@@ -290,7 +291,7 @@ function Home() {
                   </Box>
                 </TabPanel>
                 <TabPanel>
-                  <Box overflowY='scroll' h='411px' css={scrollBarStyle}>
+                  <Box overflowY='scroll' h='50vh' css={scrollBarStyle}>
                     {experience.sort((a, b) => b.startDate.getTime() - a.startDate.getTime()).map((item, index) => (
                       <Flex key={index} mt='18px' alignItems='center'>
                         <Avatar
@@ -345,7 +346,7 @@ function Home() {
             </Box>
         </Flex>
       </Box>
-    </Center>
+    </Flex>
   );
 }
 
