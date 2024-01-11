@@ -1,9 +1,10 @@
 import {
   Avatar,
   Box,
-  Center,
   Divider,
-  Flex, Icon, IconButton,
+  Flex,
+  Icon,
+  IconButton,
   Image,
   Tab,
   TabList,
