@@ -3,7 +3,7 @@ import {
   Box,
   Center,
   Divider,
-  Flex, Icon,
+  Flex, Icon, IconButton,
   Image,
   Tab,
   TabList,
@@ -13,15 +13,29 @@ import {
   Text
 } from "@chakra-ui/react";
 import {BsHeart, BsPerson, BsTools} from "react-icons/bs";
-import React from "react";
+import React, {useEffect} from "react";
 import {IoSchoolOutline} from "react-icons/io5";
 import enLang from './languages/en-us.ts';
 import ptLang from './languages/pt-br.ts';
+import {MdOutlineTranslate} from "react-icons/md";
 
 function Home() {
+  const [lang, setLang] = React.useState(ptLang);
 
-  const language = navigator.language.split('-')[0];
-  const lang = language === 'pt' ? ptLang : enLang;
+  useEffect(() => {
+    let storedLang = localStorage.getItem('lang')
+    if (!storedLang) {
+      storedLang = navigator.language.split('-')[0];
+      localStorage.setItem('lang', storedLang);
+    }
+    setLang(storedLang === 'pt' ? ptLang : enLang);
+
+  }, []);
+
+  function toggleTranslation() {
+    localStorage.setItem('lang', lang === ptLang ? 'en' : 'pt');
+    setLang(lang === ptLang ? enLang : ptLang);
+  }
 
   const experience = [
     {
@@ -225,6 +239,24 @@ function Home() {
           src='https://avatars.githubusercontent.com/u/15256984?v=4'
         />
       </Box>
+        <IconButton
+          position='absolute'
+          right='16px'
+          isRound={true}
+          variant='ghost'
+          colorScheme='teal'
+          color='white'
+          aria-label='Translate'
+          cursor='pointer'
+          _hover={{
+            cursor: 'pointer',
+            background: '#00000044',
+            color: '#3fbafe'
+          }}
+          fontSize='20px'
+          icon={<MdOutlineTranslate cursor='pointer' />}
+          onClick={toggleTranslation}
+        />
         <Flex mt='46px' color='#FFF' height='calc(100% - 64px)' alignItems='center' flexDir='column'>
           <Text fontSize='2em'>Bruno Bezouro</Text>
           <Text fontSize='1em'>contact@bezouro.com.br</Text>
