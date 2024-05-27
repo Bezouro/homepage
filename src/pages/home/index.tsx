@@ -53,10 +53,20 @@ function Home() {
       company: 'JN Moura',
       role: lang.experience["JN Moura"].role,
       startDate: new Date('2023-05-01'),
-      current: true,
+      endDate: new Date('2024-03-17'),
+      current: false,
       description: lang.experience["JN Moura"].description,
       skills: ['C#', '.NET Core', 'React', 'NodeJS'],
       avatar: 'https://media.licdn.com/dms/image/C4D0BAQH07tEjLpo7AQ/company-logo_200_200/0/1630480248385/jnmoura_logo?e=1712793600&v=beta&t=qkVEZnVR7tm7cY9veXaK4TOCB7x-PnSAJ22EivNxcJk'
+    },
+    {
+      company: 'Entrepay',
+      role: lang.experience["Entrepay"].role,
+      startDate: new Date('2024-03-18'),
+      current: true,
+      description: lang.experience["Entrepay"].description,
+      skills: ['Java', 'NodeJS', 'Spring', 'Google Cloud Platform'],
+      avatar: 'https://media.licdn.com/dms/image/D4D0BAQHKyTEuC7BSLw/company-logo_200_200/0/1693419344720/entrepay_logo?e=2147483647&v=beta&t=kgaqko84ZTDpLLaosShK04QLf_-RJHiVQOuZbaaPU-c'
     }
   ]
 
