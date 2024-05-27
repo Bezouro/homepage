@@ -6,8 +6,12 @@ const language = {
       "description": "Auxiliei na migração de código legado para microserviços, desenvolvi novos recursos no LMS e contribuí para a melhoria da qualidade do código.",
     },
     "JN Moura": {
-      "role": "Desenvolvedor de Software",
+      "role": "Engenheiro de Software",
       "description": "Desenvolvi microserviços internos, atuei em correções de bugs, criei software para clientes da Moura e contribuí para a melhoria da qualidade do código.",
+    },
+    "Entrepay": {
+      "role": "Engenheiro de Software",
+      "description": "Atuando para renovar sistemas legados, desenvolvimento do motor de risco e de rotinas automatizadas",
     }
   },
   "skills": {
