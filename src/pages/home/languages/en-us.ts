@@ -8,6 +8,10 @@ const language = {
     "JN Moura": {
       "role": "Software Developer",
       "description": "Developed internal microservices, addressed bug fixes, created software for Moura's clients, and contributed to improving code quality.",
+    },
+    "Entrepay": {
+      "role": "Software Engineer",
+      "description": "Working to renovate legacy systems, developing risk engine, and automated routines.",
     }
   },
   "skills": {
